@@ -1,0 +1,90 @@
+body {
+margin:0;
+background:#f4e9dc;
+font-family:'Playfair Display',serif;
+text-align:center;
+color:#4b3f2f;
+overflow-x:hidden;
+}
+
+h1 {
+font-family:'Great Vibes',cursive;
+font-size:60px;
+}
+
+.hero { padding:60px 20px; }
+
+.baby-photo {
+width:250px;
+border-radius:50%;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.letter {
+background:#fffaf3;
+padding:30px;
+margin:20px;
+border-radius:20px;
+}
+
+.hidden { display:none; }
+
+.envelope {
+cursor:pointer;
+font-size:20px;
+margin:20px;
+}
+
+.gallery {
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:40px;
+padding:40px;
+}
+
+.polaroid {
+background:white;
+padding:15px;
+width:200px;
+box-shadow:5px 5px 20px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.polaroid:hover { transform:scale(1.05); }
+
+.polaroid img { width:100%; }
+
+button {
+padding:10px 20px;
+background:#8b6f47;
+color:white;
+border:none;
+cursor:pointer;
+margin:10px;
+}
+
+input { padding:8px; margin:5px; }
+
+.hearts::before {
+content:"🤎 🤍 🤎 🤍 🤎 🤍";
+position:fixed;
+top:10px;
+width:100%;
+animation:float 6s infinite;
+}
+
+@keyframes float {
+0%{transform:translateY(-10px);}
+50%{transform:translateY(10px);}
+100%{transform:translateY(-10px);}
+}
+
+.grain {
+pointer-events:none;
+position:fixed;
+width:100%;
+height:100%;
+background:url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+opacity:0.3;
+}

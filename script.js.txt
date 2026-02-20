@@ -1,0 +1,44 @@
+function checkPassword(){
+var correctPassword="12/06/2023"; // CHANGE THIS
+var input=document.getElementById("passwordInput").value;
+
+if(input===03/05/2025){
+document.getElementById("lockscreen").style.display="none";
+document.getElementById("mainContent").style.display="block";
+document.getElementById("bgMusic").play();
+confetti();
+}
+}
+
+function openLetter(){
+document.getElementById("letterContent").classList.remove("hidden");
+}
+
+function toggleLetter(id){
+document.getElementById(id).classList.toggle("hidden");
+}
+
+function checkQuiz(){
+var score=0;
+
+if(document.getElementById("q1").value.toLowerCase()=="Double decker bus!") score++;
+if(document.getElementById("q2").value.toLowerCase()=="The way u treat me like the one and only pwincesh hehehe") score++;
+if(document.getElementById("q3").value.toLowerCase()=="66") score++;
+
+document.getElementById("quizResult").innerHTML=
+"You got "+score+"/3 correct 🤎";
+}
+
+var countDownDate = new Date("Feb 26, 2026 00:00:00").getTime();
+
+setInterval(function(){
+var now=new Date().getTime();
+var distance=countDownDate-now;
+var days=Math.floor(distance/(1000*60*60*24));
+document.getElementById("countdown").innerHTML=
+days+" days until you're 20 🤎";
+},1000);
+
+function confetti(){
+alert("🎉 Happy Birthday Danish 🤎"); 
+} 

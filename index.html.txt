@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Danish's 20th Birthday 🤎</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- PASSWORD SCREEN -->
+<div id="lockscreen">
+    <h2>Enter Our Special Date 🤎</h2>
+    <input type="password" id="passwordInput" placeholder="dd/mm/yyyy">
+    <button onclick="checkPassword()">Unlock</button>
+</div>
+
+<!-- MAIN CONTENT -->
+<div id="mainContent" style="display:none;">
+
+<iframe width="0" height="0"
+src="<iframe width="560" height="315" src="https://www.youtube.com/embed/8jPyE1GTnHQ?si=dcIMsENlwlHjY8zE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
+frameborder="0"
+allow="autoplay">
+</iframe>
+
+<div class="hearts"></div>
+<div class="grain"></div>
+
+<!-- HERO -->
+<section class="hero">
+    <img src="images/pic1.jpg" class="baby-photo">
+    <h1>Danish's 20th Birthday</h1>
+    <p class="date">26 February 2026</p>
+    <p id="countdown"></p>
+</section>
+
+<!-- ENVELOPE LETTER -->
+<section class="envelope-section">
+    <div class="envelope" onclick="openLetter()">💌 Click To Open My Letter</div>
+    <div id="letterContent" class="letter hidden">
+        <h2>To my one and only, forever and always🤎</h2>
+        <p>
+       My Babyboy is finally turning 20! Dah besar diaaaa, big boy!! Semoga ayang Panjang umur, murah rezeki, & sihat selalu. My love, I'm so so proud of you for everything you've been through. It's almost been a year since we first met, and u willingly changed so much for the better... No words can describe how proud I am of you my love. Now, you're one step closer to your dream, you got into spf! Alhamdulilah.. This journey is going to be long for the both of us, but InsyaAllah, we'll achieve our goals together, build our studies and careers together so that we can build a peaceful future together.. Amin.. Aminkan sayang! My love, no matter how hard things get, none of us are walking away okay? We've changed so much as a couple over the year, all because we're willing to work towards the future we want, and none of us will be giving up so easily okay? My love, you will always be in my prayers, and I always pray to be your future wife. My love towards you is genuine and forever, and I hope the same way goes to you. You're 20 now, but will always be Babyboy in my eyes. Come to me when times get rough, and i'll do everything to comfort and be there for my sweet boy. No one ever can replace you and take your place, and I can confidently sumpah on that. It's us against the world forever! To many more years of growing with one another, InsyaAllah... I love you infinity and always🤎
+
+        </p>
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+    <div class="polaroid"><img src="images/pic2.jpg"><p>Our Beginning</p></div>
+    <div class="polaroid"><img src="images/pic3.jpg"><p>My Favourite Smile</p></div>
+    <div class="polaroid"><img src="images/pic4.jpg"><p>Always Us</p></div>
+    <div class="polaroid"><img src="images/pic5.jpg"><p>Safe Place</p></div>
+    <div class="polaroid"><img src="images/pic8.jpg"><p>Forever</p></div>
+</section>
+
+<!-- QUIZ -->
+<section class="game">
+<h2>How Well Do You Know Us?</h2>
+
+<div class="question">
+<p>1. Where was our first photo taken?</p>
+<input id="q1">
+</div>
+
+<div class="question">
+<p>2. Whats my fav thing about u?</p>
+<input id="q2">
+</div>
+
+<div class="question">
+<p>3. How many more days till our anniversary??</p>
+<input id="q3">
+</div>
+
+<button onclick="checkQuiz()">Submit Answers</button>
+<p id="quizResult"></p>
+</section>
+
+<!-- OPEN WHEN LETTERS -->
+<section class="openWhen">
+<h2>Open When...</h2>
+
+<button onclick="toggleLetter('sad')">You're Sad</button>
+<p id="sad" class="hidden">awlolo napa saying ni sedih.. Babyboy cannot shad! ish weally bad.. Come! pwincesh give u hugs and kishies.. mwwwahhhh ! I love u even on ur hardest days baby🤎</p>
+
+<button onclick="toggleLetter('miss')">You Miss Me</button>
+<p id="miss" class="hidden">BABBYYY.. i miss u so much more! mungkin tk jumpa, tpi tetap call kan sayang? Huggies!</p>
+
+<button onclick="toggleLetter('proud')">You Need Motivation</button>
+<p id="proud" class="hidden">sayanggg, how dare u look down on urself. Ive known babyboy for a year! the Babyboy i know has never given up. My love, u went through so many things yet u managed to overcome it all. U can baby, u always can.. u have the potential and u need to see it. If u give up means... u no babyboy, u kidnap my babyboy!</p>
+
+</section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
